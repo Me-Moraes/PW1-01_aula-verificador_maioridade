@@ -16,16 +16,16 @@ function verificarIdade() {
     return;
   }
   const anosRestantes = 18 - idadeDigitada;
-  if (idadeDigitada <= 13) {
+  if (idadeDigitada <= 11) {
     elementoResultado.innerText =
       `Olá, ${nome}! Você tem ${idadeDigitada} anos e é uma criança.`;
     elementoResultado.style.color = "#2563eb";
-  } else if (idadeDigitada >= 14 && idadeDigitada <= 17) {
+  } else if (idadeDigitada >= 12 && idadeDigitada <= 17) {
     elementoResultado.innerText =
       `Olá, ${nome}! Você tem ${idadeDigitada} anos e é um adolescente. ` +
       `Faltam ${anosRestantes} ano(s) para atingir a maioridade.`;
     elementoResultado.style.color = "#d97706";
-  } else if (idadeDigitada >= 18 && idadeDigitada <= 70) {
+  } else if (idadeDigitada >= 18 && idadeDigitada <= 59) {
     elementoResultado.innerText =
       `Olá, ${nome}! Você tem ${idadeDigitada} anos e é um adulto. ` +
       `Seu acesso foi liberado com sucesso.`;
